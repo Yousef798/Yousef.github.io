@@ -41,8 +41,12 @@ header{
 .navigation{
   z-index: 1000;
 }
-.menu-icon{
-  z-index: 1001;
+#menu-icon{
+  color: #F1F1F1;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
 }
 .navigation a{
     color:#F1F1F1;
@@ -55,15 +59,6 @@ header{
 
 .navigation a:hover{
     color:#E42F45
-}
-
-#menu-icon{
-  color:#f1f1f1;
-  font-size: 35px;
-  cursor:pointer;
-  z-index: 999;
-  display: none;
-
 }
 
 
@@ -331,6 +326,11 @@ section{
 .cards-contact {
     background-color: #222222;
     padding: 30px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Adjust the height of the footer as needed */
     
   }
   
@@ -402,6 +402,13 @@ section{
     border-color: #E42F45;
     border-width: 3px;
   }
+
+  .form-group textarea{
+    resize: none;
+    width: 90%; /* Adjust the width percentage as needed */
+    height: 80%; /* Adjust the height percentage as needed */
+  }
+
 
 /*foooter*/
 
@@ -901,4 +908,17 @@ h2, .title, .cards-contact .title{
       
   }
 
+}
+
+
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
