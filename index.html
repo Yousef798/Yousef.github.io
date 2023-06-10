@@ -12,11 +12,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     
     <title>YousefAmerPortfolio</title>
 </head>
 <body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.navigation');
+    
+      menu.onclick = function() {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+      };
+    });
+    </script>
+    
 
 
 
@@ -30,7 +43,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-    <div class="menu-icon" id="menu-icon"><i class="bx bx-menu"></i></div>
+    <div class="bx bx-menu" id="menu-icon"></div>
 </header>
 
   
@@ -128,7 +141,7 @@
 
           <div class="project-card">
             <div class="project-image">
-              <img src="images/CoursesAppConcept.png" alt="Project Image">
+              <img src="images/CoursesAppConcept2.png" alt="Project Image">
             </div>
             <div class="project-info">
               <h3 class="project-title">Courses App</h3>
@@ -226,7 +239,9 @@
 
 
 
-      <script type ="text/javascript" src="js/script.js"></script>
+      
+      <script src="js/script.js"></script>
+
       
       
       
